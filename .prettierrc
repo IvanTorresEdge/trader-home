@@ -1,6 +1,9 @@
 {
-  "trailingComma": "es5",
+  "importOrderSeparation": true, 
+  "importOrderSortSpecifiers": true,
+  "importOrder": ["^components/(.*)$", "^[./]" ],
   "printWidth": 80,
+  "semi": false,
   "singleQuote": false,
-  "semi": false
+  "trailingComma": "es5"
 }

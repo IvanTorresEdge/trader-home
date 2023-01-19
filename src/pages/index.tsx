@@ -1,16 +1,24 @@
-import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import * as React from "react"
+
+import BookmarksSection from "./home/components/BookmarksSection"
+import NewsSection from "./home/components/NewsSection"
+import SearchInput from "./home/components/SearchInput"
+import ToolsSection from "./home/components/ToolsSection"
+
+const currentDate = new Date()
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main>
-      <h1 className="text-3xl font-bold text-lime-500 underline">
-        Hello world!
-      </h1>
+    <main className="antialiased">
+      <SearchInput />
+      <BookmarksSection />
+      <NewsSection />
+      <ToolsSection />
     </main>
   )
 }
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <title>Trader Home</title>
