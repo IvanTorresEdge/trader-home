@@ -3,28 +3,20 @@ import * as React from "react"
 
 const news = [
   {
-    name: "Bloomberg US",
-    href: "https://www.bloomberg.com/us",
-  },
-  {
-    name: "Bloomberg Europe",
-    href: "https://www.bloomberg.com/europe",
-  },
-  {
-    name: "Bloomberg Asia",
-    href: "https://www.bloomberg.com/asia",
+    name: "Bloomberg",
+    href: "https://www.bloomberg.com",
   },
   {
     name: "Decrypt",
     href: "https://decrypt.co/",
   },
   {
-    name: "CoinDesk",
-    href: "https://www.coindesk.com/",
-  },
-  {
     name: "CoinTelegraph",
     href: "https://cointelegraph.com/",
+  },
+  {
+    name: "CoinDesk",
+    href: "https://www.coindesk.com/",
   },
 ]
 

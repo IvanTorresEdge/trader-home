@@ -1,25 +1,25 @@
 import { LinkIcon } from "@heroicons/react/24/outline"
 import * as React from "react"
 
-const currentDate = new Date()
+// const currentDate = new Date()
 
-// calculate the week number for the current date
-// source: https://weeknumber.net/how-to/javascript
-const calculateWeekNumber = (d: Date): number => {
-  // Copy date so don't modify original
-  d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()))
-  // Set to nearest Thursday: current date + 4 - current day number
-  // Make Sunday's day number 7
-  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7))
-  // Get first day of year
-  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
-  // Calculate full weeks to nearest Thursday
-  const weekNo = Math.ceil(
-    ((d.getTime() - yearStart.getTime()) / 86400000 + 1) / 7
-  )
-  // Return array of year and week number
-  return weekNo
-}
+// // calculate the week number for the current date
+// // source: https://weeknumber.net/how-to/javascript
+// const calculateWeekNumber = (d: Date): number => {
+//   // Copy date so don't modify original
+//   d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()))
+//   // Set to nearest Thursday: current date + 4 - current day number
+//   // Make Sunday's day number 7
+//   d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7))
+//   // Get first day of year
+//   const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
+//   // Calculate full weeks to nearest Thursday
+//   const weekNo = Math.ceil(
+//     ((d.getTime() - yearStart.getTime()) / 86400000 + 1) / 7
+//   )
+//   // Return array of year and week number
+//   return weekNo
+// }
 
 const bookmarks = [
   {
@@ -36,9 +36,7 @@ const bookmarks = [
   },
   {
     name: "Economic Calendar",
-    href: `https://www.babypips.com/economic-calendar?week=${currentDate.getFullYear()}-W${calculateWeekNumber(
-      currentDate
-    )}`,
+    href: "https://www.babypips.com/economic-calendar",
   },
 ]
 

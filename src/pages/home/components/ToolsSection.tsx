@@ -7,6 +7,18 @@ const tools = [
     href: "https://marketmilk.babypips.com/",
   },
   {
+    name: "Currency Strength",
+    href: "https://marketmilk.babypips.com/currency-strength",
+  },
+  {
+    name: "Currency Volatility",
+    href: "https://marketmilk.babypips.com/currency-volatility",
+  },
+  {
+    name: "Currency Movers",
+    href: "https://marketmilk.babypips.com/market-movers",
+  },
+  {
     name: "Forex Market Hours",
     href: "https://www.babypips.com/tools/forex-market-hours",
   },
@@ -16,7 +28,7 @@ const tools = [
   },
   {
     name: "Forex Correlation",
-    href: "https://www.mataf.net/en/forex/tools/correlation",
+    href: "https://www.fxstreet.com/technical-analysis/intermarket/correlation",
   },
 ]
 
