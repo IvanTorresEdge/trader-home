@@ -38,6 +38,14 @@ const bookmarks = [
     name: "Economic Calendar",
     href: "https://www.babypips.com/economic-calendar",
   },
+  {
+    name: "Intrest Rates",
+    href: "https://www.global-rates.com/en/interest-rates/central-banks/central-banks.aspx",
+  },
+  {
+    name: "Inflation",
+    href: "https://www.global-rates.com/en/economic-indicators/inflation/inflation.aspx",
+  },
 ]
 
 const BookmarksSection = () => (
