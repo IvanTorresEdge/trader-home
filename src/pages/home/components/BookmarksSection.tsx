@@ -44,7 +44,10 @@ const bookmarks = [
   },
   {
     name: "Inflation",
-    href: "https://www.global-rates.com/en/economic-indicators/inflation/inflation.aspx",
+    href: [
+      "https://www.global-rates.com/en/economic-indicators/inflation/inflation.aspx",
+      "https://truflation.com/",
+    ],
   },
 ]
 
